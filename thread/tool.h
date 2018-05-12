@@ -78,6 +78,16 @@ wstring FormatSize(uint64 size)
 	return str;
 }
 
+bool Trim(string &trim)
+{
+	for (int i = trim.length()-1; i>=0;--i)
+	{
+		if (trim.at(i) > 32)
+			return true;
+	}
+	return false;
+}
+
 uint64 __stdcall ScanPath(string path, vector<string>& files) //files存储该路径下的所有文件
 {
 	uint64 ui64FolderSize = 0;			//该目录下子文件总大小

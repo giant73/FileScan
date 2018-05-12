@@ -70,7 +70,7 @@ public:
 	vector<CWorkerThread*> m_idleList;
 
 	//线程常量
-	static const int THREAD_MAX_NUM = 30;
+	static const int THREAD_MAX_NUM = 15;
 	static const int THREAD_INIT_NUM = 10;
 	static const int THREAD_AVAIL_LOW = 5;
 	static const int THREAD_AVAIL_HIGH = 15;
