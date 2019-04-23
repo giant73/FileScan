@@ -61,7 +61,7 @@ wstring FormatSize(uint64 size)
 	static TCHAR str[260] = {};
 	if (size < 0)
 	{
-		return _T("0B");
+		return L"0B";
 	}
 	else
 	{
@@ -75,7 +75,7 @@ wstring FormatSize(uint64 size)
 		}
 		_stprintf_s(str, 259, for_mat[i], (double)size / uint);
 	}
-	return str;
+	//return str;
 }
 
 bool Trim(string &trim)
